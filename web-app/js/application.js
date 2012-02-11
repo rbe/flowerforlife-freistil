@@ -1,3 +1,4 @@
+/*
 if (typeof jQuery !== 'undefined') {
 	(function($) {
 		$('#spinner').ajaxStart(function() {
@@ -7,3 +8,4 @@ if (typeof jQuery !== 'undefined') {
 		});
 	})(jQuery);
 }
+*/

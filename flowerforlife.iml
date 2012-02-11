@@ -106,9 +106,9 @@
       <sourceFolder url="file://$MODULE_DIR$/grails-app/i18n" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/unit" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/test/integration" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target/classes" />
     </content>
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="library" name="com.springsource.sts.grails.core.CLASSPATH_CONTAINER" level="application" />
     <orderEntry type="module-library">
       <library name="junit4">
         <CLASSES>
@@ -134,8 +134,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="flowerforlife-grailsPlugins" />
-    <orderEntry type="library" name="grails-2.0.0" level="application" />
-    <orderEntry type="library" name="grails-2.0.0" level="application" />
   </component>
 </module>
 

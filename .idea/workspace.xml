@@ -27,73 +27,44 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/eu/artofcoding/dak/ffl/controller/UploadController.groovy" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/domain/Image.groovy" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/domain/Tag.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/services/eu/artofcoding/dak/ffl/email/EmailService.groovy" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/dak/ffl/helper/ControllerBase.groovy" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/views/upload/index.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sql/westawac.h2.db" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/eu/artofcoding/dak/ffl/controller/UploadControllerTests.groovy" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/eu/artofcoding/dak/ffl/taglib/FflTagLibTests.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/ApplicationResources$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/ApplicationResources$_run_closure1_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/ApplicationResources.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/BootStrap$_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/BootStrap$_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/BootStrap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/BuildConfig$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/BuildConfig$_run_closure1_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/BuildConfig$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/BuildConfig$_run_closure1_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/BuildConfig$_run_closure1_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/Config$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/Config$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/Config$_run_closure1_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/Config$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/Config.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/DataSource$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/DataSource$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/DataSource$_run_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/DataSource$_run_closure3_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/DataSource$_run_closure3_closure4_closure7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/DataSource$_run_closure3_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/DataSource$_run_closure3_closure5_closure8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/DataSource$_run_closure3_closure6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/DataSource$_run_closure3_closure6_closure9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/DataSource$_run_closure3_closure6_closure9_closure10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/DataSource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/FlowerForLife$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/FlowerForLife$_run_closure1_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/FlowerForLife$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/FlowerForLife$_run_closure1_closure3_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/FlowerForLife.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/UrlMappings$__clinit__closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/UrlMappings$__clinit__closure1_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/UrlMappings$__clinit__closure1_closure2_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/UrlMappings.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/error.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/eu/artofcoding/dak/ffl/domain/Image$__clinit__closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/eu/artofcoding/dak/ffl/domain/Image.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/eu/artofcoding/dak/ffl/domain/Tag$__clinit__closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/eu/artofcoding/dak/ffl/domain/Tag.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/eu/artofcoding/dak/ffl/taglib/FflTagLib$_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/eu/artofcoding/dak/ffl/taglib/FflTagLib$_closure1_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/eu/artofcoding/dak/ffl/taglib/FflTagLib.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/index.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/layouts/main.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/resources$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/resources.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/WEB-INF/classes/upload/index.gsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.project" afterPath="$PROJECT_DIR$/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/services/eu/artofcoding/dak/ffl/HttpSessionService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/eu/artofcoding/flux/HttpSessionService.groovy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/services/eu/artofcoding/image/imagemagick/ImageMagickService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/eu/artofcoding/flux/image/imagemagick/ImageMagickService.groovy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/grails/helper/ControllerBase.groovy" afterPath="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/flux/helper/ControllerBase.groovy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/grails/helper/FileHelper.groovy" afterPath="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/flux/helper/FileHelper.groovy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/grails/helper/StringHelper.groovy" afterPath="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/flux/helper/StringHelper.groovy" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/image/imagemagick/ImageMagickCategory.groovy" afterPath="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/flux/image/imagemagick/ImageMagickCategory.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/FlowerForLife.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/FlowerForLife.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/ResponseHeaderFilters.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/ResponseHeaderFilters.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/application.js" afterPath="$PROJECT_DIR$/web-app/js/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/eu/artofcoding/dak/ffl/image/ImageController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/eu/artofcoding/dak/ffl/image/ImageController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/ContestConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/ContestConfig.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/ContestFileType.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/ContestFileType.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/FflConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/FflConfig.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/image/Image.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/image/Image.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/image/Tag.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/image/Tag.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/eu/artofcoding/dak/ffl/image/ImageService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/eu/artofcoding/dak/ffl/image/ImageService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/taglib/eu/artofcoding/dak/ffl/taglib/FflTagLib.groovy" afterPath="$PROJECT_DIR$/grails-app/taglib/eu/artofcoding/dak/ffl/taglib/FflTagLib.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/image/upload.gsp" afterPath="$PROJECT_DIR$/grails-app/views/image/upload.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/eu/artofcoding/flux/http/session/FluxSessionListener.groovy" afterPath="$PROJECT_DIR$/src/groovy/eu/artofcoding/flux/http/session/FluxSessionListener.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/ffladmin.js" afterPath="$PROJECT_DIR$/web-app/js/ffladmin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/flowerforlife.js" afterPath="$PROJECT_DIR$/web-app/js/flowerforlife.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/flux.fastms.js" afterPath="$PROJECT_DIR$/web-app/js/flux.fastms.js" />
+    </list>
+    <list id="3cbbeb20-6558-42b4-9dec-b957d52c2c92" name="IDEA" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/aoc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flowerforlife-grailsPlugins.iml" afterPath="$PROJECT_DIR$/flowerforlife-grailsPlugins.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flowerforlife.iml" afterPath="$PROJECT_DIR$/flowerforlife.iml" />
     </list>
     <ignored path="flowerforlife.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,6 +83,21 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/services/eu/artofcoding/dak/ffl/image/ImageService.groovy" line="146" class="eu.artofcoding.dak.ffl.image.ImageService" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -152,40 +138,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ImageController.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ImageController.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/eu/artofcoding/dak/ffl/image/ImageController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="17" selection-start="1796" selection-end="1796" vertical-scroll-proportion="12.434783">
+            <state line="132" column="35" selection-start="5053" selection-end="5053" vertical-scroll-proportion="0.33333334">
               <folding>
-                <element signature="n#!!block;n#find#0;n#!!block;n#ImageController#0" expanded="true" />
+                <element signature="e#2996#4797#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageService.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ImageService.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/eu/artofcoding/dak/ffl/image/ImageService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="25" selection-start="5832" selection-end="5832" vertical-scroll-proportion="0.6736021">
+            <state line="147" column="36" selection-start="5975" selection-end="5975" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="n#!!block;n#saveImage#0;n#!!block;n#ImageService#0" expanded="true" />
+                <element signature="e#826#926#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Image.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/image/Image.groovy">
+      <file leaf-file-name="upload.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/image/upload.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="8" selection-start="813" selection-end="813" vertical-scroll-proportion="-8.333333">
-              <folding>
-                <element signature="n#!!block;n#check#0;n#!!block;n#Image#0" expanded="true" />
-                <element signature="e#1072#1548#0" expanded="true" />
-              </folding>
+            <state line="34" column="74" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.33333334">
+              <folding />
             </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
@@ -201,18 +181,34 @@
     <option name="UPDATE_CHANGES_POLICY" value="STASH" />
     <option name="LINE_SEPARATORS_CONVERSION" value="ASK" />
   </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/groovy/eu/artofcoding/flux/http/session/FluxSessionListener.groovy" />
+        <option value="$PROJECT_DIR$/web-app/js/flux.fastms.js" />
+        <option value="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/grails/helper/FileHelper.groovy" />
         <option value="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/grails/helper/ControllerBase.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/image/imagemagick/ImageMagickCategory.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/grails/helper/StringHelper.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/flux/helper/FileHelper.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/ResponseHeaderFilters.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/FlowerForLife.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/image/Image.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/utils/eu/artofcoding/flux/helper/ControllerBase.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/eu/artofcoding/dak/ffl/image/ImageService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/image/upload.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/eu/artofcoding/dak/ffl/image/ImageController.groovy" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="84" />
-    <option name="y" value="28" />
+    <option name="x" value="143" />
+    <option name="y" value="26" />
     <option name="width" value="2203" />
     <option name="height" value="1326" />
   </component>
@@ -270,7 +266,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="war" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerforlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerforlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerforlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerforlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerforlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerforlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerforlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerforlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,6 +407,20 @@
               <option name="myItemId" value="grails-app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerforlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerforlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -358,7 +448,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
+              <option name="myItemId" value="flux" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -377,6 +467,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -468,6 +562,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerforlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerforlife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -481,15 +593,22 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.atlassian.theplugin.idea.config.ProjectConfigurationComponent" />
+    <property name="options.lastSelected" value="copyright" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="eu.artofcoding.flux.image.imagemagick" />
+      <recent name="eu.artofcoding.flux" />
+    </key>
   </component>
   <component name="RunManager" selected="Grails.Grails:flowerforlife">
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -627,14 +746,58 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy Script">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="false" name="Grails:flowerforlife" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="flowerforlife" />
-      <setting name="vmparams" value="" />
+      <setting name="vmparams" value="-Xmx512m -XX:MaxPermSize=256m" />
       <setting name="cmdLine" value="run-app" />
       <setting name="depsClasspath" value="true" />
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowser" value="false" />
+      <MavenGeneralSettings>
+        <option name="checksumPolicy" value="FAIL" />
+        <option name="failureBehavior" value="FAST" />
+        <option name="localRepository" value="" />
+        <option name="mavenHome" value="" />
+        <option name="nonRecursive" value="false" />
+        <option name="pluginUpdatePolicy" value="DO_NOT_UPDATE" />
+        <option name="printErrorStackTraces" value="false" />
+        <option name="snapshotUpdatePolicy" value="ALWAYS_UPDATE" />
+        <option name="usePluginRegistry" value="false" />
+        <option name="userSettingsFile" value="" />
+        <option name="workOffline" value="false" />
+      </MavenGeneralSettings>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
       <method>
         <option name="Make" enabled="false" />
       </method>
@@ -668,47 +831,57 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <option name="associatedChangelistId" value="3cbbeb20-6558-42b4-9dec-b957d52c2c92" />
       <changelist id="778506e5-13fa-4460-a73a-6629897bc647" name="Default" comment="" />
+      <changelist id="3cbbeb20-6558-42b4-9dec-b957d52c2c92" name="IDEA" comment="" />
       <created>1328027666179</created>
       <updated>1328027666179</updated>
     </task>
-    <servers />
+    <servers>
+      <JIRA shared="true" url="https://team.art-of-coding.eu/jira">
+        <password>dff9dfc5dfdddfdfdfc0dfcbdfd2df9edf9e</password>
+        <option name="useHttpAuthentication" value="false" />
+        <option name="useProxy" value="false" />
+        <username>rbe</username>
+      </JIRA>
+    </servers>
   </component>
   <component name="ToolWindowManager">
-    <frame x="84" y="28" width="2203" height="1326" extended-state="0" />
-    <editor active="true" />
+    <frame x="143" y="26" width="2203" height="1326" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32974318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974318" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25822902" sideWeight="0.67025685" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Issues - JIRA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32974318" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23341067" sideWeight="0.67025685" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21763341" sideWeight="0.67025685" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299304" sideWeight="0.6006628" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Navigate" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Navigate" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.67025685" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993372" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23155452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21160093" sideWeight="0.6006628" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24965197" sideWeight="0.67025685" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.3299304" sideWeight="0.49710023" order="3" side_tool="false" content_ui="tabs" x="184" y="128" width="2003" height="1126" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Issues - JIRA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32974318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24965197" sideWeight="0.49710023" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -749,7 +922,7 @@
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
@@ -765,6 +938,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="atlassian-ide-plugin-workspace">
     <option name="activeToolWindowTab" value="Issues - JIRA" />
     <option name="bambooConfiguration">
@@ -779,6 +956,7 @@
         <option name="username" value="rbe" />
       </UserCfgBean>
     </option>
+    <option name="defaultCredentialsAsked" value="true" />
   </component>
   <component name="atlassian-ide-plugin-workspace-issues">
     <option name="filtersMap">
@@ -831,41 +1009,84 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/utils/eu/artofcoding/grails/helper/StringHelper.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="397" selection-end="397" vertical-scroll-proportion="0.24152543" />
+        <state line="7" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.11271186" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/utils/eu/artofcoding/grails/helper/FileHelper.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/spring/resources.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="397" selection-end="397" vertical-scroll-proportion="0.24152543" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/utils/eu/artofcoding/grails/helper/ControllerBase.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="12" selection-start="2757" selection-end="2757" vertical-scroll-proportion="0.74067795" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.grails/2.0.0/projects/flowerforlife/plugins/webxml-1.4.1/WebxmlGrailsPlugin.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/FlowerForLife.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2916" selection-end="2916" vertical-scroll-proportion="0.48474577">
+        <state line="23" column="6" selection-start="609" selection-end="609" vertical-scroll-proportion="0.37033898" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="44" selection-start="1600" selection-end="1600" vertical-scroll-proportion="0.5284672">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/eu/artofcoding/dak/ffl/HttpSessionService.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/services/eu/artofcoding/flux/HttpSessionService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="507" selection-end="507" vertical-scroll-proportion="0.27372882">
+        <state line="9" column="30" selection-start="371" selection-end="378" vertical-scroll-proportion="0.24498567">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/eu/artofcoding/flux/image/imagemagick/ImageMagickService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="986" selection-end="986" vertical-scroll-proportion="0.6260745">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/war/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.29320988">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$GRAILS_ROOT$/lib/com.springsource.springloaded/springloaded-core/jars/springloaded-core-1.0.2.jar!/com/springsource/loaded/TypeRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="26" selection-start="8855" selection-end="8855" vertical-scroll-proportion="0.34545454">
+          <folding>
+            <element signature="method#ivicheck#0;class#TypeRegistry#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$GRAILS_ROOT$/lib/com.springsource.springloaded/springloaded-core/jars/springloaded-core-1.0.2.jar!/com/springsource/loaded/ri/ReloadedTypeInvoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/eu/artofcoding/dak/ffl/image/Image.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="8" selection-start="813" selection-end="813" vertical-scroll-proportion="-8.333333">
+        <state line="36" column="12" selection-start="710" selection-end="710" vertical-scroll-proportion="0.36387664">
           <folding>
-            <element signature="n#!!block;n#check#0;n#!!block;n#Image#0" expanded="true" />
-            <element signature="e#1072#1548#0" expanded="true" />
+            <element signature="e#864#1404#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -873,20 +1094,43 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/eu/artofcoding/dak/ffl/image/ImageController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/utils/eu/artofcoding/flux/helper/ControllerBase.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="17" selection-start="1796" selection-end="1796" vertical-scroll-proportion="12.434783">
-          <folding>
-            <element signature="n#!!block;n#find#0;n#!!block;n#ImageController#0" expanded="true" />
-          </folding>
+        <state line="124" column="31" selection-start="4047" selection-end="4066" vertical-scroll-proportion="0.840052">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/eu/artofcoding/dak/ffl/image/ImageService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="25" selection-start="5832" selection-end="5832" vertical-scroll-proportion="0.6736021">
+        <state line="147" column="36" selection-start="5975" selection-end="5975" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#!!block;n#saveImage#0;n#!!block;n#ImageService#0" expanded="true" />
+            <element signature="e#826#926#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/ResponseHeaderFilters.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="1829" selection-end="1829" vertical-scroll-proportion="1.4426934">
+          <folding>
+            <element signature="e#303#1821#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/image/upload.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="74" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/eu/artofcoding/dak/ffl/image/ImageController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="35" selection-start="5053" selection-end="5053" vertical-scroll-proportion="0.33333334">
+          <folding>
+            <element signature="e#2996#4797#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -923,6 +1167,18 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>aoc</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -970,7 +1226,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|flowerforlife</last-edited>
+          <last-edited>flowerforlife</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

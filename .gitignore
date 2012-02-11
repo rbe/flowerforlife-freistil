@@ -5,3 +5,4 @@ devDb*
 target/
 target-eclipse/
 ffltemp/
+web-app/js/jquery.fancybox-1.3.4

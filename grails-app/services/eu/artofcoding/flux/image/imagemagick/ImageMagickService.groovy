@@ -18,11 +18,10 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package eu.artofcoding.image.imagemagick
+package eu.artofcoding.flux.image.imagemagick
 
 import eu.artofcoding.dak.ffl.ConfigService
-import eu.artofcoding.grails.helper.FileHelper
-import eu.artofcoding.image.imagemagick.ImageMagickCategory
+import eu.artofcoding.flux.helper.FileHelper
 
 /**
  * Service for editing images with ImageMagick.

@@ -1,33 +1,29 @@
 /*
+ * Flux
+ * Copyright (C) 2009-2010 Informationsysteme Ralf Bensmann.
  * Copyright (C) 2011-2012 art of coding UG (haftungsbeschränkt).
  *
- * Alle Rechte vorbehalten, siehe http://files.art-of-coding.eu/aoc/AOCPL_v10_de.html
- * All rights reserved. Use is subject to license terms, see http://files.art-of-coding.eu/aoc/AOCPL_v10_en.html
- *
+ * Alle Rechte vorbehalten. Nutzung unterliegt Lizenzbedingungen.
+ * All rights reserved. Use is subject to license terms.
  */
-package eu.artofcoding.grails.helper
+package eu.artofcoding.flux.helper
 
-import javax.servlet.http.HttpServletResponse
-
-import eu.artofcoding.dak.ffl.ConfigService
-import eu.artofcoding.image.imagemagick.ImageMagickService
 import grails.converters.JSON
-import groovy.json.JsonBuilder
-import groovy.json.StreamingJsonBuilder
+import javax.servlet.http.HttpServletResponse
 
 /**
  * Base class for our controllers.
  * @author rbe
  */
 abstract class ControllerBase {
-    
+
     /**
      * Characters unwanted in request parameters.
      */
     String[] requestParameterChars = ('a'..'z').toList() + ('A'..'Z').toList() + (0..9).toList() + '%'
-    
+
     /**
-     * 
+     *
      */
     void dumpconfig() {
         StringBuilder sb = new StringBuilder()
@@ -37,7 +33,7 @@ abstract class ControllerBase {
         }
         render sb.toString()
     }
-    
+
     /**
      * Check characters of input against list of eligible characters.
      * @param input
@@ -53,9 +49,9 @@ abstract class ControllerBase {
         }.join('')
         output
     }
-    
+
     /**
-     * 
+     *
      * @param data
      */
     def renderAnswerAsJSON(HttpServletResponse response, data, contentType = 'text/json') {
@@ -89,9 +85,9 @@ abstract class ControllerBase {
          */
         render json as JSON
     }
-    
+
     /**
-     * 
+     *
      * @param response
      * @param image
      */
@@ -134,4 +130,5 @@ abstract class ControllerBase {
             response.outputStream.flush()
         }
     }
+
 }

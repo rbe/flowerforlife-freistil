@@ -7,7 +7,7 @@
  * All rights reserved. Use is subject to license terms, see http://files.art-of-coding.eu/aoc/AOCPL_v10_en.html
  *
  */
-package eu.artofcoding.dak.ffl
+package eu.artofcoding.flux
 
 import eu.artofcoding.dak.ffl.image.ImageService
 

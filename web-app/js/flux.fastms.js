@@ -1,9 +1,10 @@
 /*
- * Flux Copyright (C) 2011-2012 art of coding UG (haftungsbeschränkt).
- * 
- * Alle Rechte vorbehalten, siehe http://files.art-of-coding.eu/aoc/AOCPL_v10_de.html
- * All rights reserved. Use is subject to license terms, see http://files.art-of-coding.eu/aoc/AOCPL_v10_en.html
- * 
+ * Flux
+ * Copyright (C) 2009-2010 Informationsysteme Ralf Bensmann.
+ * Copyright (C) 2011-2012 art of coding UG (haftungsbeschränkt).
+ *
+ * Alle Rechte vorbehalten. Nutzung unterliegt Lizenzbedingungen.
+ * All rights reserved. Use is subject to license terms.
  */
 var FLUX = FLUX || {};
 FLUX.FASTMS = function($) {

@@ -1,25 +1,19 @@
-/**
+/*
  * DAK Flower for Life
  * Copyright (C) 2011-2012 art of coding UG (haftungsbeschränkt).
  *
- * Alle Rechte vorbehalten, siehe http://files.art-of-coding.eu/aoc/AOCPL_v10_de.html
- * All rights reserved. Use is subject to license terms, see http://files.art-of-coding.eu/aoc/AOCPL_v10_en.html
- *
+ * Alle Rechte vorbehalten. Nutzung unterliegt Lizenzbedingungen.
+ * All rights reserved. Use is subject to license terms.
  */
 package eu.artofcoding.dak.ffl.image
 
-import java.io.File
+import eu.artofcoding.dak.ffl.ConfigService
+import eu.artofcoding.flux.helper.FileHelper
 import java.text.SimpleDateFormat
-import java.util.List
-import java.util.Map
-
 import org.codehaus.groovy.grails.web.servlet.mvc.GrailsHttpSession
 import org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequest
 import org.springframework.web.context.request.RequestContextHolder
 import org.springframework.web.multipart.MultipartFile
-
-import eu.artofcoding.dak.ffl.ConfigService
-import eu.artofcoding.grails.helper.FileHelper
 
 /**
  * Service for dealing with images.
@@ -30,11 +24,11 @@ class ImageService {
     /**
      * Instance to parse birthdays.
      */
-    static SimpleDateFormat sdf
+    static SimpleDateFormat germanDate
 
     static {
-        sdf = new SimpleDateFormat("dd.MM.yyyy")
-        sdf.setLenient(false)
+        germanDate = new SimpleDateFormat("dd.MM.yyyy")
+        germanDate.setLenient(false)
     }
 
     /**
@@ -64,6 +58,7 @@ class ImageService {
      * Save an image: determine actual contest, move the image into corresponding directory
      * and put some metadata into database.
      * @param multipartFile From MultipartHttpServletRequest.
+     * @param params params.image from controller.
      * @see org.springframework.web.multipart.MultipartFile
      * @see org.springframework.web.multipart.MultipartHttpServletRequest
      */
@@ -90,25 +85,31 @@ class ImageService {
                     sessionId: session.id,
                     contestId: contestId,
                     contest: configService.fflConfig.actualContest,
-                    username: params.username,
+                    //username: params.username,
                     email: params.email instanceof List ? params.email[0] : params.email,
+                    /*
                     birthday: params.birthday,
                     tag: params.tag,
+                    */
                     name: multipartFile.originalFilename,
                     extension: decomposedImageFilename.ext,
                     fileExists: true,
                     approved: false,
+                    /*
                     terms: params.terms ?: false,
                     contactMe: params.contactMe ?: false, // FFL-1
                     zipcode: params.zipcode // FFL-1
+                    */
             )
+            img.properties += params //.remove('image')
             img.save(flush: true)
             // TODO Send email on request, implement separate service
             //
-            result = [success: [
-                    message: "Successfully uploaded image ${multipartFile.originalFilename}",
-                    contestId: contestId
-            ]
+            result = [
+                    success: [
+                            message: "Successfully uploaded image ${multipartFile.originalFilename}",
+                            contestId: contestId
+                    ]
             ]
         } else {
             throw new IllegalStateException("File type ${decomposedImageFilename.ext} of ${multipartFile.originalFilename} not supported. Supported types are ${configService.actualContest.fileTypes*.name.join(', ')}")
@@ -120,7 +121,7 @@ class ImageService {
     /**
      * Update image(s) with data.
      * @param contestId
-     * @param data
+     * @param params params.image from controller.
      * @return Possibliy updated images.
      */
     public List updateImage(List contestId, Map params) {
@@ -129,7 +130,7 @@ class ImageService {
         if (params.email) params.email = params.email[0]
         // Birthday
         if (params.birthday) {
-            params.birthday = sdf.parse("${params.remove('birthday.day')}.${String.format("%02d", params.remove('birthday.month') as Integer)}.${params.remove('birthday.year')}")
+            params.birthday = germanDate.parse("${params.remove('birthday.day')}.${String.format("%02d", params.remove('birthday.month') as Integer)}.${params.remove('birthday.year')}")
         }
         // Tag
         String paramsTag = params.remove('tag')
@@ -147,7 +148,7 @@ class ImageService {
                 }
             }
             // Merge data
-            image.properties += params
+            image.properties += params //.remove('image')
             image.merge()
         }
     }

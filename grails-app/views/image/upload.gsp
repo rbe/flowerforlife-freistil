@@ -16,6 +16,9 @@
                 <input type="text" id="email" name="image.email" value="ralf@art-of-coding.eu" />
                 <input type="text" id="email" name="image.email" value="ralf@art-of-coding.eu" />
             </p>
+            </p>
+                <input type="text" id="zipcode" name="image.zipcode" value="48123" />
+            </p>
             <p>
                 <input type="text" id="birthday.day" name="image.birthday.day" value="20" />
                 <input type="text" id="birthday.month" name="image.birthday.month" value="9" />
@@ -31,7 +34,8 @@
                 </select>
             </p>
             <p>
-                <input type="checkbox" id="terms" name="image.terms" value="Terms & Conditions">
+                <input type="checkbox" id="terms" name="image.terms" value="true">Terms &amp; Conditions</input>
+                <input type="checkbox" id="contactMe" name="image.contactMe" value="true">You may contact me</input>
             </p>
             <p>
                 <img id="preview"/>

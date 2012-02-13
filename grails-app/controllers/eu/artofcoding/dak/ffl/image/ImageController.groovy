@@ -1,48 +1,45 @@
-/**
+/*
  * DAK Flower for Life
  * Copyright (C) 2011-2012 art of coding UG (haftungsbeschränkt).
  *
- * Alle Rechte vorbehalten, siehe http://files.art-of-coding.eu/aoc/AOCPL_v10_de.html
- * All rights reserved. Use is subject to license terms, see http://files.art-of-coding.eu/aoc/AOCPL_v10_en.html
- *
+ * Alle Rechte vorbehalten. Nutzung unterliegt Lizenzbedingungen.
+ * All rights reserved. Use is subject to license terms.
  */
 package eu.artofcoding.dak.ffl.image
 
-import java.text.SimpleDateFormat
-
+import eu.artofcoding.flux.helper.ControllerBase
+import eu.artofcoding.flux.helper.FileHelper
+import eu.artofcoding.flux.image.imagemagick.ImageMagickService
 import org.codehaus.groovy.grails.web.converters.exceptions.ConverterException
 import org.springframework.web.multipart.MultipartFile
 import org.springframework.web.multipart.MultipartHttpServletRequest
-
-import eu.artofcoding.grails.helper.ControllerBase
-import eu.artofcoding.grails.helper.FileHelper
-import eu.artofcoding.image.imagemagick.ImageMagickService
 
 /**
  * Controller for images.
  * @author rbe
  */
 class ImageController extends ControllerBase {
-    
+
     /**
      * Allowed methods for actions.
      */
     static allowedMethods = [
-        'find': ['POST'],
-        'upload': ['GET', 'POST'],
-        'stream': ['GET'],
-        'info': ['GET']]
-    
+            'find': ['POST'],
+            'upload': ['GET', 'POST'],
+            'stream': ['GET'],
+            'info': ['GET']
+    ]
+
     /**
      * The image service.
      */
     ImageService imageService
-    
+
     /**
      * The ImageMagick service.
      */
     ImageMagickService imageMagickService
-    
+
     /**
      * Default index action.
      */
@@ -58,7 +55,7 @@ class ImageController extends ControllerBase {
         println session
         renderAnswerAsJSON(response, [success: [message: 'Hello, this is a image service.']])
     }
-    
+
     /**
      * Upload a new image.
      */
@@ -71,19 +68,25 @@ class ImageController extends ControllerBase {
         if (!session.updatedContestId) {
             session.updatedContestId = []
         }
+        if (params.contestId) session.contestId << params.contestId
         // Map for JSON answer
         Map answer = null
-        if (params.image) {
+        // Got image data?
+        if (session.contestId && params.image) {
             try {
                 // Find image and update it with data
-                if (log.traceEnabled) log.trace imageService.updateImage(session.contestId, params.image)
+                def result = imageService.updateImage(session.contestId, params.image)
+                if (log.traceEnabled) log.trace result
                 // Remember update to contestId
                 session.updatedContestId += session.contestId
-                answer = [success: [message: "Updated image ${session.contestId}"]]
+                answer = [success: [message: "Updated image(s): ${session.contestId.join(', ')}"]]
             } catch (e) {
-                e.printStackTrace()
+                log.error("Cannot save image data for ${session.contestId}", e)
                 answer = [error: [message: e.message]]
             }
+        } else if (params.image) {
+            answer = [error: [message: "No contestId, no update: params=${params.image}"]]
+            log.error answer
         }
         // File upload: a multipart request
         if (request instanceof MultipartHttpServletRequest) {
@@ -113,13 +116,13 @@ class ImageController extends ControllerBase {
                             // Don't render JSON answer
                             answer = null
                         } catch (e) {
-                            e.printStackTrace()
+                            log.error(null, e)
                             answer = [error: [message: e.message]]
                         }
                     }
                 }
             } catch (e) {
-                e.printStackTrace()
+                log.error(null, e)
                 answer = [error: [message: e.message]]
             }
         }
@@ -127,18 +130,18 @@ class ImageController extends ControllerBase {
         if (log.traceEnabled) log.trace "ImageController.upload: answer=${answer}"
         if (answer) {
             renderAnswerAsJSON(response, answer, 'application/x-javascript')
-        }
+        } // else render upload.gsp
     }
-    
+
     /**
-     * 
+     *
      * @return
      */
     def lastContestId() {
         if (log.traceEnabled) log.trace "ImageController.lastContestId: session=${session}"
         renderAnswerAsJSON(response, [success: [contestId: session.contestId]])
     }
-    
+
     /**
      * Approve an image.
      * This set attribute 'approved' of Image to true.
@@ -152,7 +155,7 @@ class ImageController extends ControllerBase {
             renderAnswerAsJSON(response, message: 'Incorrect parameters.')
         }
     }
-    
+
     /**
      * Reject an image.
      * This set attribute 'approved' of Image to false.
@@ -165,7 +168,7 @@ class ImageController extends ControllerBase {
             renderAnswerAsJSON(response, [error: [message: 'Incorrect parameters.']])
         }
     }
-    
+
     /**
      * Delete an image from database and filesystem.
      */
@@ -181,7 +184,7 @@ class ImageController extends ControllerBase {
             renderAnswerAsJSON(response, [error: [message: 'Incorrect parameters.']])
         }
     }
-    
+
     /**
      * List all images in a contest.
      */
@@ -203,7 +206,7 @@ class ImageController extends ControllerBase {
             renderAnswerAsJSON(response, [error: [message: "I talk JSON, sorry: ${e.message}"]])
         }
     }
-    
+
     /**
      * Return information about image as JSON.
      */
@@ -230,7 +233,7 @@ class ImageController extends ControllerBase {
         }
         renderAnswerAsJSON(response, m)
     }
-    
+
     /**
      * Stream image, parameter id is used to construct filename.
      * TODO Render "error message" as image
@@ -254,7 +257,7 @@ class ImageController extends ControllerBase {
             log.error 'Incorrect parameters.'
         }
     }
-    
+
     /**
      * Stream a thumbnail of an image, parameter id is used to construct filename.
      * TODO Render "error message" as image
@@ -284,9 +287,9 @@ class ImageController extends ControllerBase {
             log.error 'Incorrect parameters.'
         }
     }
-    
+
     /**
-     * 
+     *
      * @param image
      * @return
      */
@@ -322,5 +325,5 @@ class ImageController extends ControllerBase {
         // Return converted file.
         return converted
     }
-    
+
 }

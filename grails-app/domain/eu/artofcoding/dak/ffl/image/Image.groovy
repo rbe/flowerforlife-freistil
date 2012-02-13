@@ -2,24 +2,21 @@
  * DAK Flower for Life
  * Copyright (C) 2011-2012 art of coding UG (haftungsbeschränkt).
  *
- * Alle Rechte vorbehalten, siehe http://files.art-of-coding.eu/aoc/AOCPL_v10_de.html
- * All rights reserved. Use is subject to license terms, see http://files.art-of-coding.eu/aoc/AOCPL_v10_en.html
- *
+ * Alle Rechte vorbehalten. Nutzung unterliegt Lizenzbedingungen.
+ * All rights reserved. Use is subject to license terms.
  */
 package eu.artofcoding.dak.ffl.image
 
-import java.util.Date
-
 /**
- * 
+ *
  */
 class Image {
-    
+
     Long id
     Long version
     Date dateCreated
     Date lastUpdated
-    
+
     String sessionId
     String contestId
     String contest
@@ -36,24 +33,18 @@ class Image {
     String shopUrl
     boolean bookmark
     // FFL-1
-    String plz
+    String zipcode
     // FFL-1
     boolean contactMe
-    
-    def beforeInsert() { check() }
-    def beforeUpdate() { check() }
 
-    /**
-     * FFL-1 Check input.
-     */
-    def check() {
-        
-    }
-    
+    def beforeInsert() {}
+
+    def beforeUpdate() {}
+
     static hasMany = [
-        tag: Tag
+            tag: Tag
     ]
-    
+
     static constraints = {
         sessionId nullable: true
         contestId nullable: false
@@ -70,6 +61,8 @@ class Image {
         terms nullable: true
         shopUrl nullable: true
         bookmark nullable: true
+        zipcode nullable: true
+        contactMe nullable: true
     }
-    
+
 }

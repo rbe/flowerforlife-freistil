@@ -8,11 +8,11 @@
 package eu.artofcoding.dak.ffl
 
 /**
- * 
+ *
  * @author rbe
  */
 class ContestConfig {
-    
+
     Long id
     Long version
     Date dateCreated
@@ -23,9 +23,10 @@ class ContestConfig {
     Integer maximumWidth
     Integer maximumHeight
     Integer standardThumbnailHeight
-    
+    String uploadDirectory // FFL-2
+
     static hasMany = [fileTypes: ContestFileType]
-    
+
     static constraints = {
         contest nullable: false
         //fileTypes nullable: false
@@ -33,13 +34,15 @@ class ContestConfig {
         maximumWidth nullable: true
         maximumHeight nullable: true
         standardThumbnailHeight nullable: true
+        uploadDirectory nullable: true // FFL-2
     }
-    
+
     def beforeInsert() {
         if (!maximumFileSize) maximumFileSize = 30 * 1024 * 1024
         if (!maximumWidth) maximumWidth = 1920
         if (!maximumHeight) maximumHeight = 1280
         if (!standardThumbnailHeight) standardThumbnailHeight = 90
+        if (!uploadDirectory) uploadDirectory = "fflimages/${contest}" // FFL-2
     }
-    
+
 }

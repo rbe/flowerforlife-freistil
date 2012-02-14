@@ -7,7 +7,7 @@
  */
 package eu.artofcoding.dak.ffl.image
 
-import eu.artofcoding.dak.ffl.ConfigService
+import eu.artofcoding.dak.ffl.ContestConfig
 import eu.artofcoding.flux.helper.FileHelper
 import java.text.SimpleDateFormat
 import org.codehaus.groovy.grails.web.servlet.mvc.GrailsHttpSession
@@ -32,11 +32,6 @@ class ImageService {
     }
 
     /**
-     * Our configuration service.
-     */
-    ConfigService configService
-
-    /**
      * Get HTTP session.
      * @return GrailsHttpSession
      */
@@ -50,8 +45,9 @@ class ImageService {
      * @param contestId Contest ID of certain Image.
      * @return String Name of directory.
      */
-    public String getUploadDirectory(String contestId) {
-        "${configService.fflConfig.uploadDirectory}/${configService.fflConfig.actualContest}/${contestId}"
+    public String getUploadDirectory(/*FFL-2*/ String contest, String contestId) {
+        ContestConfig cc = ContestConfig.findByContest(contest)
+        "${cc.uploadDirectory}/${contestId}"
     }
 
     /**
@@ -67,16 +63,18 @@ class ImageService {
         Map result = [:]
         // Decomponse original file name
         Map decomposedImageFilename = FileHelper.decomposeFilename(multipartFile.originalFilename)
+        // FFL-2 The contest
+        def acceptedFileTypes = ContestConfig.findByContest(params.contest).fileTypes*.name //configService.actualContest.fileTypes*.name
         // Do we accept this image type?
-        //if (log.traceEnabled) log.trace "ImageService.saveImage: Checking file type ${ext} in ${configService.actualContest.fileTypes*.name}"
-        if (decomposedImageFilename.ext.toLowerCase() in configService.actualContest.fileTypes*.name) {
+        if (log.traceEnabled) log.trace "ImageService.saveImage: Checking file type ${decomposedImageFilename.ext} in ${acceptedFileTypes}"
+        if (decomposedImageFilename.ext.toLowerCase() in acceptedFileTypes) {
             // Where to put uploaded file?
             File tempFile = File.createTempFile('ffl_', ".${decomposedImageFilename.ext}")
             tempFile.delete()
             // Extract generated ID from temporary filename
             String contestId = tempFile.name - 'ffl_' - ".${decomposedImageFilename.ext}"
             // Create directory for new file
-            File file = new File(getUploadDirectory(contestId), multipartFile.originalFilename)
+            File file = new File(getUploadDirectory(/*FFL-2*/ params.contest, contestId), multipartFile.originalFilename)
             file.parentFile.mkdirs()
             // Move file
             multipartFile.transferTo(file)
@@ -84,7 +82,7 @@ class ImageService {
             Image img = new Image(
                     sessionId: session.id,
                     contestId: contestId,
-                    contest: configService.fflConfig.actualContest,
+                    contest: params.contest, // FFL-2
                     //username: params.username,
                     email: params.email instanceof List ? params.email[0] : params.email,
                     /*
@@ -101,9 +99,8 @@ class ImageService {
                     zipcode: params.zipcode // FFL-1
                     */
             )
-            img.properties += params //.remove('image')
+            img.properties += params // .remove('image') was already done
             img.save(flush: true)
-            // TODO Send email on request, implement separate service
             //
             result = [
                     success: [
@@ -112,7 +109,7 @@ class ImageService {
                     ]
             ]
         } else {
-            throw new IllegalStateException("File type ${decomposedImageFilename.ext} of ${multipartFile.originalFilename} not supported. Supported types are ${configService.actualContest.fileTypes*.name.join(', ')}")
+            throw new IllegalStateException("File type ${decomposedImageFilename.ext} of ${multipartFile.originalFilename} not supported. Supported types are ${acceptedFileTypes.join(', ')}")
         }
         // Return
         result
@@ -126,7 +123,6 @@ class ImageService {
      */
     public List updateImage(List contestId, Map params) {
         // Email address
-        // TODO Verify via SMTP, cache result, implement as separate service
         if (params.email) params.email = params.email[0]
         // Birthday
         if (params.birthday) {
@@ -264,7 +260,9 @@ class ImageService {
      * @return
      */
     private File getDirectoryForImage(Image image) {
-        String parentDirectory = "${configService.fflConfig.uploadDirectory}/${image.contest}/${image.contestId}"
+        // FFL-2
+        ContestConfig cc = ContestConfig.findByContest(image.contest)
+        String parentDirectory = "${cc.uploadDirectory}/${image.contestId}"
         new File(parentDirectory)
     }
 

@@ -12,21 +12,18 @@ import org.codehaus.groovy.grails.commons.GrailsApplication
 import org.hibernate.FetchMode
 import org.springframework.beans.factory.InitializingBean
 
-
 /**
  * This service provides access to our configuration.
  * @author rbe
  */
 class ConfigService implements InitializingBean {
-    
+
     GrailsApplication grailsApplication
-    
-    //ConfigObject fflConfig
-    
+
     FflConfig fflConfig
-    
+
     List<ContestConfig> contestConfigs
-    
+
     /**
      * @see InitializingBean#afterPropertiesSet
      */
@@ -44,9 +41,9 @@ class ConfigService implements InitializingBean {
         // Load configuration for contests from database
         contestConfigs = ContestConfig.list()
     }
-    
+
     /**
-     * 
+     *
      * @param what
      * @return
      */
@@ -55,10 +52,12 @@ class ConfigService implements InitializingBean {
             case 'fflConfig':
                 fflConfig
                 break
+            /* FFL-2 Es gibt nicht mehr "den" aktuellen Contest
             case 'actualContest':
                 ContestConfig cc = contestConfigs.find { it.contest == fflConfig.actualContest }
                 ContestConfig.findById(cc.id)
                 break
+            */
             default:
                 for (cc in contestConfigs) {
                     def found = cc.contest.find { it == what }
@@ -67,7 +66,8 @@ class ConfigService implements InitializingBean {
                         return cc
                     }
                 }
-            
+
         }
     }
+
 }

@@ -3,15 +3,15 @@
  *
  * Alle Rechte vorbehalten, siehe http://files.art-of-coding.eu/aoc/AOCPL_v10_de.html
  * All rights reserved. Use is subject to license terms, see http://files.art-of-coding.eu/aoc/AOCPL_v10_en.html
- * 
+ *
  * ImageMagick:
- * 
+ *
  * Licensed under the ImageMagick License (the "License"); you may not use
  * this file except in compliance with the License.  You may obtain a copy
  * of the License at
- * 
+ *
  * http://www.imagemagick.org/script/license.php
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
@@ -28,12 +28,12 @@ import eu.artofcoding.flux.helper.FileHelper
  * @author rbe
  */
 class ImageMagickService {
-    
+
     /**
-     * The configuration service.
+     * Our configuration service.
      */
     ConfigService configService
-    
+
     /**
      * Check if two file have the same format/extension or not.
      * @param file1 Left/first file for check.
@@ -52,11 +52,11 @@ class ImageMagickService {
                 if (decomp.ext.toLowerCase() in list) differentFormat = false
             }
             switch (decomp1.ext.toLowerCase()) {
-                // JPEG
+            // JPEG
                 case { it in ['jpg', 'jpeg'] }:
                     cc decomp2, ['jpg', 'jpeg']
                     break
-                // TIFF
+            // TIFF
                 case { it in ['tif', 'tiff'] }:
                     cc decomp2, ['tif', 'tiff']
                     break
@@ -64,7 +64,7 @@ class ImageMagickService {
         }
         differentFormat
     }
-    
+
     /**
      * Convert an image into another.
      * @param image java.io.File, object of image to resize.
@@ -77,7 +77,7 @@ class ImageMagickService {
         }
         // Where to save?
         File _converted = converted
-        use (ImageMagickCategory) {
+        use(ImageMagickCategory) {
             // Convert
             Process process = image.init(configService.fflConfig.imageMagickHome).convert(converted)
             // Error while resizing
@@ -91,7 +91,7 @@ class ImageMagickService {
         // Return converted file object
         return _converted
     }
-    
+
     /**
      * Convert an image to a certain size.
      * @param image java.io.File, object of image to resize.
@@ -117,12 +117,12 @@ class ImageMagickService {
         // otherwise return File object of existing file
         if (!resized.exists()) {
             log.info "ImageMagickService.resize: Resizing image ${image} to ${resized} with width=${width} and height=${height}"
-            use (ImageMagickCategory) {
+            use(ImageMagickCategory) {
                 // Convert
                 Process process =
-                image.init(configService.fflConfig.imageMagickHome)
-                .option('-resize', resizeOption.toString())
-                .convert(resized)
+                    image.init(configService.fflConfig.imageMagickHome)
+                            .option('-resize', resizeOption.toString())
+                            .convert(resized)
                 // Error while resizing
                 if (process.exitValue() != 0) {
                     // No resized file
@@ -136,7 +136,7 @@ class ImageMagickService {
         }
         return resized
     }
-    
+
     /**
      * Convert an image to a thumbnail size.
      * @param image java.io.File, object of image to resize.
@@ -162,7 +162,7 @@ class ImageMagickService {
         // otherwise return File object of existing file
         if (!resized.exists()) {
             log.info "ImageMagickService.thumbnail: Resizing image ${image} to ${resized.absolutePath} with width=${width} and height=${height}"
-            use (ImageMagickCategory) {
+            use(ImageMagickCategory) {
                 // Convert to PNG (used as intermediate working format)?
                 File pngFile = null
                 if (decomposedImageFilename.ext != 'png') {
@@ -175,33 +175,33 @@ class ImageMagickService {
                 Process process = null
                 try {
                     process = pngFile.init(configService.fflConfig.imageMagickHome)
-                    .option('-thumbnail', "${resizeOption}^")
-                    .option('-unsharp', '0x.05')
-                    .option('-gravity', 'center')
-                    .option('-extent', resizeOption.toString())
-                    .convert(resized)
+                            .option('-thumbnail', "${resizeOption}^")
+                            .option('-unsharp', '0x.05')
+                            .option('-gravity', 'center')
+                            .option('-extent', resizeOption.toString())
+                            .convert(resized)
                     // Add rounded corners
                     if (decomposedConvertedFilename.ext == 'gif') {
                         process = resized.init(configService.fflConfig.imageMagickHome)
-                        .option('\\(')
-                        .option('+clone')
-                        .option('-alpha', 'extract')
-                        .option('-draw', "'fill black polygon 0,0 0,15 15,0 fill white circle 15,15 15,0'")
-                        .option('\\(')
-                        .option('+clone', '-flip')
-                        .option('\\)')
-                        .option('-compose', 'Multiply')
-                        .option('-composite')
-                        .option('\\(')
-                        .option('+clone', '-flop')
-                        .option('\\)')
-                        .option('-compose', 'Multiply')
-                        .option('-composite')
-                        .option('\\)')
-                        .option('-alpha', 'off')
-                        .option('-compose', 'CopyOpacity')
-                        .option('-composite')
-                        .convert(resized)
+                                .option('\\(')
+                                .option('+clone')
+                                .option('-alpha', 'extract')
+                                .option('-draw', "'fill black polygon 0,0 0,15 15,0 fill white circle 15,15 15,0'")
+                                .option('\\(')
+                                .option('+clone', '-flip')
+                                .option('\\)')
+                                .option('-compose', 'Multiply')
+                                .option('-composite')
+                                .option('\\(')
+                                .option('+clone', '-flop')
+                                .option('\\)')
+                                .option('-compose', 'Multiply')
+                                .option('-composite')
+                                .option('\\)')
+                                .option('-alpha', 'off')
+                                .option('-compose', 'CopyOpacity')
+                                .option('-composite')
+                                .convert(resized)
                     }
                 } catch (e) {
                     log.info e
@@ -220,16 +220,16 @@ class ImageMagickService {
         }
         return resized
     }
-    
+
     /**
-     * 
+     *
      * @param image
      * @return
      */
     public Map identify(File image) {
-        use (ImageMagickCategory) {
+        use(ImageMagickCategory) {
             image.init(configService.fflConfig.imageMagickHome).option('-verbose').identify()
         }
     }
-    
+
 }

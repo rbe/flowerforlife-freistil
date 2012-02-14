@@ -18,12 +18,12 @@ class FflConfig {
     Date dateCreated
     Date lastUpdated
 
-    String actualContest
+    // FFL-2 String actualContest
     String imageMagickHome
     String uploadDirectory
 
     static constraints = {
-        actualContest nullable: false
+        // FFL-2 actualContest nullable: false
         imageMagickHome nullable: false
         uploadDirectory nullable: false
     }

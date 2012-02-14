@@ -19,7 +19,7 @@ class Image {
 
     String sessionId
     String contestId
-    String contest
+    String contest // FFL-2
     String username
     String email
     String name // of file/image
@@ -32,10 +32,8 @@ class Image {
     boolean terms
     String shopUrl
     boolean bookmark
-    // FFL-1
-    String zipcode
-    // FFL-1
-    boolean contactMe
+    String zipcode // FFL-1
+    boolean contactMe // FFL-1
 
     def beforeInsert() {}
 

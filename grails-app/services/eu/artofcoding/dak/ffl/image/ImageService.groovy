@@ -198,13 +198,14 @@ class ImageService {
         def result = c {
             // Fill search values
             search.criteria.each { k, v ->
-                if (log.traceEnabled) log.trace "eq: $k = $v/${v.getClass()}"
                 switch (k) {
                     case 'approved':
                         eq(k, Boolean.valueOf(v))
                         break
                     case 'tag':
-                        tag { ilike('tag.name', v) }
+                        tag {
+                            ilike('name', v)
+                        }
                         break
                     default:
                         eq(k, v)

@@ -12,6 +12,7 @@
                 <div id="username" class="gallery_thumb_text"></div>
             </div>
         </div>
+        <script type="text/javascript" src="js/flux.fastms.js"></script>
         <script type="text/javascript">
             var firstResult = 1;
             var max = 10;

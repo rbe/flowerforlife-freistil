@@ -71,7 +71,7 @@ class ImageController extends ControllerBase {
         if (params.contestId) session.contestId << params.contestId
         // Map for JSON answer
         Map answer = null
-        // Got image data?
+        // Got form data for image?
         if (session.contestId && params.image) {
             try {
                 // Find image and update it with data
@@ -80,6 +80,8 @@ class ImageController extends ControllerBase {
                 // Remember update to contestId
                 session.updatedContestId += session.contestId
                 answer = [success: [message: "Updated image(s): ${session.contestId.join(', ')}"]]
+                // FFL-4 Forget contestId, remove it from session as it will be removed when another image is uploaded, see below
+                session.contestId.clear()
             } catch (e) {
                 log.error("Cannot save image data for ${session.contestId}", e)
                 answer = [error: [message: e.message]]
@@ -98,7 +100,7 @@ class ImageController extends ControllerBase {
                         answer = [error: [message: 'File is empty, sorry.']]
                     } else {
                         try {
-                            // Cleanup?
+                            // FFL-4 Cleanup?
                             // Remove files which were uploaded previously (but do not have data)
                             // This is related to image preview: user uploaded a file and then decided to upload another.
                             if (session.contestId.size() > 0) {

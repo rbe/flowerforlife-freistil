@@ -29,7 +29,7 @@
                             approved: true
                         }
                     },
-                    done: FFL.renderGallery
+                    done: function(data, statusText, jqXHR) { FFL.renderGallery(data, '#gallery_template', '#content_gallery') }
                 });
             }
             jQuery('#gallery').click(function() {

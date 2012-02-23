@@ -207,6 +207,9 @@ class ImageService {
                             ilike('name', v)
                         }
                         break
+                    case 'username':
+                        ilike('username', v)
+                        break
                     default:
                         eq(k, v)
                 }

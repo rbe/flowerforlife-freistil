@@ -42,10 +42,11 @@ class ImageService {
 
     /**
      * Return directory name of upload directory. If contestId is given, return directory for certain image.
+     * @param String contest FFL-2
      * @param contestId Contest ID of certain Image.
      * @return String Name of directory.
      */
-    public String getUploadDirectory(/*FFL-2*/ String contest, String contestId) {
+    public String getUploadDirectory(String contest, String contestId) {
         ContestConfig cc = ContestConfig.findByContest(contest)
         "${cc.uploadDirectory}/${contestId}"
     }

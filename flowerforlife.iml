@@ -50,7 +50,6 @@
         <fileset id="Grails" name="Grails" removed="false">
           <file>file://$MODULE_DIR$/web-app/WEB-INF/applicationContext.xml</file>
         </fileset>
-        <fileset id="web: application context" profiles="" autodetected="true" />
       </configuration>
     </facet>
     <facet type="web" name="GrailsWeb">
@@ -108,7 +107,7 @@
       <sourceFolder url="file://$MODULE_DIR$/test/integration" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target/classes" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Java 1.6.0" jdkType="JavaSDK" />
     <orderEntry type="module-library">
       <library name="junit4">
         <CLASSES>
@@ -124,16 +123,14 @@
       <library name="Grails User Library (flowerforlife)">
         <CLASSES>
           <root url="file://$MODULE_DIR$/lib" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/antlr/antlr/jars/antlr-2.7.6.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/antlr/antlr/sources/antlr-2.7.6-sources.jar!/" />
-        </SOURCES>
+        <SOURCES />
         <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="flowerforlife-grailsPlugins" />
+    <orderEntry type="library" name="grails-2.0.1" level="application" />
   </component>
 </module>
 

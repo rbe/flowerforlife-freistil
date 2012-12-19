@@ -30,7 +30,7 @@ environments {
             //driverClassName = "org.h2.Driver"
             //url = "jdbc:h2:prodDb;MVCC=TRUE"
             driverClassName = "com.mysql.jdbc.Driver"
-            url = "jdbc:mysql://127.0.2.3/ce_freistil"
+            url = "jdbc:mysql://10.4.100.4/ce_freistil"
             username = "freistildbuser"
             password = "bKHd56nGV44ZCsm8r9AFR"
             pooled = true

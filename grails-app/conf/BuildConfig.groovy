@@ -2,8 +2,8 @@ grails.servlet.version = "3.0" // Change depending on target container complianc
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
-grails.project.target.level = 1.6
-grails.project.source.level = 1.6
+grails.project.target.level = 1.7
+grails.project.source.level = 1.7
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
 grails.project.dependency.resolution = {
@@ -12,9 +12,8 @@ grails.project.dependency.resolution = {
         // uncomment to disable ehcache
         // excludes 'ehcache'
     }
-    log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
+    log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     checksums true // Whether to verify checksums on resolve
-    
     repositories {
         inherits true // Whether to inherit repository definitions from plugins
         grailsPlugins()
@@ -34,9 +33,9 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.16'
     }
     plugins {
-        runtime ":hibernate:$grailsVersion"
+        runtime ":hibernate4:4.3.4.2"
         runtime ":jquery:1.7.1"
         runtime ":resources:1.1.5"
-        build ":tomcat:$grailsVersion"
+        build ":tomcat:7.0.52.1"
     }
 }
